@@ -1,0 +1,27 @@
+{
+  "name": "backend_online_shopping_store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd frontend_online_shopping_store && npm start",
+    "dev": "concurrently -n 'server,client' \"nodemon server.js\" \"npm run client\"",
+    "start": "node server.js",
+    "heroku-postbuild": "cd frontend_online_shopping_store && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.4",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^2.0.2"
+  }
+}
