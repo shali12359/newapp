@@ -190,7 +190,7 @@ export default class NavBar extends Component {
             )}
 
             <Form inline onSubmit={this.clickSearch}>
-              <FormControl type="text" placeholder="Search..." value={this.state.Search} onChange={this.onChangeSearch} className="mr-sm-2"/>
+              <FormControl type="text" placeholder="Search" value={this.state.Search} onChange={this.onChangeSearch} className="mr-sm-2"/>
               <Button variant="outline-dark mt-2">Search</Button>
             </Form>
           </Navbar.Collapse>
